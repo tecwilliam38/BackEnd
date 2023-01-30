@@ -5,6 +5,9 @@ const routes = Router();
 const controller = require('../controllers/cadastroPcController');
 const cadastroUserController = require('../controllers/cadastroUserController')
 
+routes.get('/',(req, res)=>{
+    return res.json("Backend on line!")
+});
 
 routes.post('/cadastroPc',controller.cadastroPc);
 routes.get('/cadastroPc',controller.index);

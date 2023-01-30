@@ -5,8 +5,8 @@ const app = express();
 
 const routes = require('./routes/routes');
 
-const port = process.env.PORT || 3002;
 app.use(cors())
+const port = process.env.PORT || 3001;
 
 const Loaders = require('./loaders');
 
