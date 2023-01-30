@@ -7,7 +7,7 @@ const cadastroUserSchema = new Schema({
     id: ObjectId,
     user: String,
     company: String,
-    phone: Number,
+    phone: String,
     ceo: String,
     mail: String,
     skill: String,

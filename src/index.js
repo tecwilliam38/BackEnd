@@ -1,18 +1,19 @@
 const express = require("express");
 const cors = require('cors')
 const app = express();
-const connection = require("./dbConfig/dbConfig");
+// const connection = require("./dbConfig/dbConfig");
 
 const routes = require('./routes/routes');
 
+const port = process.env.PORT || 3002;
 app.use(cors())
 
-// const Loaders = require('./loaders');
+const Loaders = require('./loaders');
 
-// Loaders.start();
+Loaders.start();
 
 app.use(express.json());
 app.use(routes);
-connection();
+// connection();
 
 app.listen(3002, console.log("Servidor rodando na porta 3002"));
