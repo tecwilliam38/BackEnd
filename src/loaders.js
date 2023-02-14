@@ -1,4 +1,4 @@
-const connection = require('./dbConfig/dbConfig');
+const connection = require('./mongoConfig/index');
 
 class Loaders{
 start(){
