@@ -9,6 +9,8 @@ const cadastroSchema = new Schema({
     serviceTag: String,
     user: String,
     status: String,
+    garantia: String,
+    reservado: String,
     msg: String,    
     disp: String
 })
