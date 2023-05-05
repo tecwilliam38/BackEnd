@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 const ObjectId = Schema.ObjectId;
 
-const cadastroSchema = new Schema({
+const pcSchema = new Schema({
     id: ObjectId,
     asset: String,
     serviceTag: String,
@@ -15,7 +15,5 @@ const cadastroSchema = new Schema({
     disp: String
 })
 
-const CadastroModel = mongoose.model("cadastroPc", cadastroSchema)
-module.exports = CadastroModel;
-
-
+const pcModel = mongoose.model("cadastroPc", pcSchema)
+module.exports = pcModel;
